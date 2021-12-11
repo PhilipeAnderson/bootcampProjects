@@ -34,6 +34,10 @@ export function NewTransactionModal({ isOpen, onRequestClose }:NewTransactionMod
           placeholder="Valor"
         />
 
+        
+
+
+
         <input
           placeholder="Categoria"
         />
