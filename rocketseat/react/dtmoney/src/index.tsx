@@ -10,6 +10,29 @@ createServer({
 
   },
 
+  seeds(server){
+    server.db.loadData({
+      transactions:[
+        {
+          id: 1,
+          title: 'Pagamento Salário',
+          type: 'deposit',
+          category: 'Trabalho',
+          amount: 7200.00,
+          createdAt: new Date('2022-02-01 09:30:00')
+        },
+        {
+          id: 2,
+          title: 'Parcela Carro',
+          type: 'withdraw',
+          category: 'Despesas',
+          amount: 800,
+          createdAt: new Date('2022-02-01 10:00:00')
+        }
+      ]
+    })
+  },
+
   routes(){
 
     this.namespace = 'api';
