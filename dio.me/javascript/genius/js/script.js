@@ -38,7 +38,7 @@ const lightColor = (element, time) => {
 const checkOrder = () => {
   for(let i in clickOrder) {
     if(clickOrder[i] != order[i]) {
-      lose();
+      gameOver();
       break;
     };
   };
@@ -74,5 +74,26 @@ const createColorElement = (color) => {
   }
 }
 
+// Function for the next level for game
+const nextLevel = () => {
+  score++;
+  shuffleOrder();
+}
 
+// Function that finish the game because the user loser the match
+const gameOver = () => {
+  alert(`Score: ${ score }\n You Lose! For start new game click in OK!`);
+  order = [];
+  clickOrder = [];
+
+  playGame();
+}
+
+// Function that start the match
+const playGame = () => {
+  alert('Welcome the Genius')
+  score = 0;
+
+  nextLevel();
+}
 
