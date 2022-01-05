@@ -27,11 +27,11 @@ const lightColor = (element, time) => {
 
   setTimeout(() => {
     element.classList.add('selected');
-  }, time - 250);
+  }, time);
 
   setTimeout(() => {
     element.classList.remove('selected');
-  }, time);
+  });
 };
 
 // Check if the buttons is the same of order created in the game
@@ -56,9 +56,9 @@ const click = (color) => {
 
   setTimeout(() => {
     createColorElement(color).classList.remove('selected');
-  }, 500);
+    checkOrder();
+  }, 250);
 
-  checkOrder( );
 };
 
 // Function that return the color selected
@@ -97,3 +97,14 @@ const playGame = () => {
   nextLevel();
 }
 
+green.addEventListener('click', click(0));
+red.addEventListener('click', click(1));
+yellow.addEventListener('click', click(2));
+blue.addEventListener('click', click(3));
+
+green.onclick = () => click(0)
+red.onclick = () => click(1)
+yellow.onclick = () => click(2)
+blue.onclick = () => click(3)
+
+playGame();
