@@ -59,8 +59,8 @@ const click = (color) => {
   }, 500);
 
   checkOrder( );
-}
-shuffleOrder()
+};
+
 
 
 
