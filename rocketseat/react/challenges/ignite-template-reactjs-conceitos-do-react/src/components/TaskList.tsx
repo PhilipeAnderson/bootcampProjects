@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import '../styles/tasklist.scss'
 
@@ -14,9 +14,28 @@ export function TaskList() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskTitle, setNewTaskTitle] = useState('');
 
+  
   function handleCreateNewTask() {
-    // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
+    let coming:any = [{}];
+    const keyDate:any = new Date()
+    const uniqueGen = keyDate * Math.floor(Math.random() * 10) + 1 / keyDate 
+    console.log(uniqueGen)
+    
+    if(newTaskTitle != ''){
+      coming =
+        {
+          id: uniqueGen,
+          title: newTaskTitle,
+          isComplete: false
+        }
+      
+      setTasks([...tasks, coming])
+    }else{
+      alert('Você deve preencher o campo para adicionar uma nova tarefa')
+    }
   }
+
+  console.log(tasks)
 
   function handleToggleTaskCompletion(id: number) {
     // Altere entre `true` ou `false` o campo `isComplete` de uma task com dado ID
