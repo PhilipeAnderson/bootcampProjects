@@ -1,48 +1,50 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-import '../styles/tasklist.scss'
+import '../styles/tasklist.scss';
 
-import { FiTrash, FiCheckSquare } from 'react-icons/fi'
+import { FiTrash, FiCheckSquare } from 'react-icons/fi';
 
 interface Task {
   id: number;
   title: string;
   isComplete: boolean;
-}
+};
 
 export function TaskList() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskTitle, setNewTaskTitle] = useState('');
 
-  
   function handleCreateNewTask() {
-    let coming:any = [{}];
-    const keyDate:any = new Date()
-    const uniqueGen = keyDate * Math.floor(Math.random() * 10) + 1 / keyDate 
-    console.log(uniqueGen)
+    const keyDate:any = new Date();
+    const uniqueGen = keyDate * Math.floor(Math.random() * 10) + 1 / keyDate;
     
     if(newTaskTitle != ''){
-      coming =
+      const coming =
         {
           id: uniqueGen,
           title: newTaskTitle,
           isComplete: false
-        }
-      
-      setTasks([...tasks, coming])
+        };
+      setTasks([...tasks, coming]);
     }else{
-      alert('Você deve preencher o campo para adicionar uma nova tarefa')
+      alert('Você deve preencher o campo para adicionar uma nova tarefa');
     }
   }
 
-  console.log(tasks)
-
   function handleToggleTaskCompletion(id: number) {
-    // Altere entre `true` ou `false` o campo `isComplete` de uma task com dado ID
+                      
+    const completed = tasks.map(task => task.id === id ? {
+      ...task, 
+      isComplete: !task.isComplete
+    } : task);
+
+    setTasks(completed);
+    
   }
 
   function handleRemoveTask(id: number) {
-    // Remova uma task da listagem pelo ID
+    const remove = tasks.filter(task => task.id !== id);
+    setTasks(remove);
   }
 
   return (
