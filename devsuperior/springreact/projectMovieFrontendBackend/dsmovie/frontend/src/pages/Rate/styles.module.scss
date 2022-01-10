@@ -1,3 +1,45 @@
 .container {
-  background: blue;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem;
+}
+
+.content {
+  box-sizing: border-box;
+
+  img {
+    width: 800px;
+    height: 400px;
+  }
+
+  h3 {
+    color: var(--fonts);
+  }
+
+  form {
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    div {
+      margin-right: 1.5rem;
+    }
+
+    label {
+      color: var(--fonts);
+      margin-bottom: 0.5rem;
+    }
+    
+    input, select{
+      margin-bottom: 1rem;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+    }
+  }
+
+
 }
