@@ -1,10 +1,18 @@
-import { Header } from '../src/components/Header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Header } from '../src/components/Header'
+import { Main } from './pages/Main';
+import { Rate } from './pages/Rate';
 
-
-function App() {
+export default function App() {
   return (
-    <Header />
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/rate" >
+          <Route path=":movieId" element={<Rate />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
