@@ -1,16 +1,30 @@
 import styles from './styles.module.scss';
-import logoImg from '../../img/logo.png'
+import { useState, useEffect } from 'react';
 
 export function Header() {
-  return(
+
+  const [repositories, setRepositories] = useState([]);
+
+  useEffect(async () => {
+    const response = await fetch('https://api.github.com/users/PhilipeAnderson')
+    const data = await response.json()
+
+    setRepositories(data)
+  })
+
+  return (
     <header className={styles.container}>
       <nav className={styles.content}>
-        <img src={logoImg} alt="Imagem do User" />
+        <img src={repositories.avatar_url} alt="Pic from user" />
+        <div>
+          <p>Seja Bem Vindo</p>
+          <p>{repositories.name}</p>
+        </div>
         <button>
-          <a href="https://github.com">github</a>
+          <a href="https://github.com/PhilipeAnderson">github</a>
         </button>
       </nav>
     </header>
-    
+
   );
 }
