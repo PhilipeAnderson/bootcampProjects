@@ -1,7 +1,9 @@
 .container {
   width: 100%;
-  height: 90px;
-  background-color: var(--backgroundElements);
+  height: 160px;
+  background-image: url('../../img/chaplin1.jpg');
+  background-size: cover;
+  background-position: 0px -220px;
 }
 
 .content {
@@ -14,7 +16,8 @@
   justify-content: space-between;
 
     img {
-      width: 120px;
+      margin-top: 10px;
+      width: 140px;
     }
 }
 
@@ -26,7 +29,7 @@
     padding: 1rem 1rem;
     border-radius: 3rem;
     background-color: var(--dark);
-    color: var(--destak);
+    color: var(--default);
     border: none;
 
     display: flex;
@@ -34,8 +37,16 @@
     justify-content: space-around;
   }
 
-  a:hover {
-    color: var(--fonts)
+  svg {
+    color: var(--default);
   }
+
+  &:hover {
+   a, svg {
+     color: var(--destak) 
+   } 
+  }
+
+
 
 }

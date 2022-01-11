@@ -1,0 +1,20 @@
+.container {
+  max-width: 400px;
+  margin-left: 40px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  svg {
+    margin: 0;
+    font-size: 25px;
+    color: var(--fonts);
+  }
+
+  p {
+    margin: 40px 25px;
+    font-size: 25px;
+    color: var(--fonts);
+  }
+}

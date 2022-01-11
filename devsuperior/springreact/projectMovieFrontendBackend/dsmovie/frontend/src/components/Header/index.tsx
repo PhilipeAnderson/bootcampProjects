@@ -11,7 +11,7 @@ export function Header() {
         </div>
         <div className={styles.btnGithub}>
             <a target="_blank" rel="noreferrer" href="https://github.com/PhilipeAnderson/bootcampProjects/tree/main/devsuperior/springreact/projectMovieFrontendBackend/dsmovie">
-              <FaGithub color="greenyellow" />
+              <FaGithub />
               Project in Github
             </a>
         </div>
