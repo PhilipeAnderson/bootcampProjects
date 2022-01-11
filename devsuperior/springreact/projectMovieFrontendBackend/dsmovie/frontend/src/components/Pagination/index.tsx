@@ -8,6 +8,7 @@ export function Pagination() {
     <div className={styles.container}>
       <FaArrowLeft />
       <p>Avaliar</p>
+      {/* {`${1} de ${3}`} */}
       <FaArrowRight />
     </div>
   )
