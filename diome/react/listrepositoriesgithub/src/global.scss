@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #252424;
+  --darkLight: #333333;
+  --light: #d6d6d6;
+  --destak: #fffb00;
+  --fonts: #ffffff;
+}
+
+html {
+  background-color: var(--dark);
+
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 87.50%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+li {
+  list-style: none;
+}
