@@ -6,6 +6,7 @@ export function Main() {
     <section className={styles.container}>
       <h1>Welcome to our app!</h1>
       <Pagination />
+      
     </section>
   )
 }
