@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +9,17 @@
 :root {
   --dark: #252424;
   --darkLight: #333333;
+
   --light: #d6d6d6;
   --destak: #fffb00;
+
   --fonts: #ffffff;
+  --fontsDark: #484848;
 }
 
 html {
   background-color: var(--dark);
-
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 1080px) {
     font-size: 93.75%;
   }
