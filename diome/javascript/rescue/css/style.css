@@ -208,3 +208,67 @@ body {
 		background-position: -528px;
 	}
 }
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../assets/img/disparo.png);
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+.anima4 {
+	width:44px;
+	height:51px;
+	background-image:url(../assets/img/amigo_explosao.png);
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+       -moz-animation: play3 .5s steps(7) infinite;
+        -ms-animation: play3 .5s steps(7) infinite;
+         -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+ 
