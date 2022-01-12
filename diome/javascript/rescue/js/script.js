@@ -9,7 +9,12 @@ function start() {
 	//placar
 	$("#fundoGame").append("<div id='placar'></div>");
 
+	//barra de energia
+	$("#fundoGame").append("<div id='energia'></div>");
+
 	var jogo = {}
+
+	var energiaAtual=3;
 
 	var velocidade = 5;
 	var posicaoY = parseInt(Math.random() * 334);
@@ -52,6 +57,7 @@ function start() {
 		moveamigo();
 		colisao();
 		placar();
+		energia();
 	}
 
 	function movefundo() {
@@ -168,7 +174,7 @@ function start() {
 		// jogador com o inimigo1
 
 		if (colisao1.length > 0) {
-
+			energiaAtual--;
 			inimigo1X = parseInt($("#inimigo1").css("left"));
 			inimigo1Y = parseInt($("#inimigo1").css("top"));
 			explosao1(inimigo1X, inimigo1Y);
@@ -179,7 +185,7 @@ function start() {
 		}
 
 		if (colisao2.length > 0) {
-
+			energiaAtual--;
 			inimigo2X = parseInt($("#inimigo2").css("left"));
 			inimigo2Y = parseInt($("#inimigo2").css("top"));
 			explosao2(inimigo2X, inimigo2Y);
@@ -192,6 +198,7 @@ function start() {
 
 		if (colisao3.length > 0) {
 			pontos=pontos+100;
+			velocidade=velocidade+0.3;
 			inimigo1X = parseInt($("#inimigo1").css("left"));
 			inimigo1Y = parseInt($("#inimigo1").css("top"));
 
@@ -326,6 +333,32 @@ function start() {
 	
 		$("#placar").html("<h2> Pontos: " + pontos + " Salvos: " + salvos + " Perdidos: " + perdidos + "</h2>");
 		
+	}
+
+	function energia() {
+	
+		if (energiaAtual==3) {
+			
+			$("#energia").css("background-image", "url(assets/img/energia3.png)");
+		}
+	
+		if (energiaAtual==2) {
+			
+			$("#energia").css("background-image", "url(assets/img/energia2.png)");
+		}
+	
+		if (energiaAtual==1) {
+			
+			$("#energia").css("background-image", "url(assets/img/energia1.png)");
+		}
+	
+		if (energiaAtual==0) {
+			
+			$("#energia").css("background-image", "url(assets/img/energia0.png)");
+			
+			//Game Over
+		}
+	
 	}
 
 }
