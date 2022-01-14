@@ -46,3 +46,13 @@ border-radius: 5px;
 background: rgb(92, 187, 182);
 backface-visibility: hidden; /* todo elemento tem uma frente e um verso (ao contrario, como um espelho.) essa propriedade retira o verso */
 }
+
+.card-front {
+  transform: rotateY(180deg); /* antes, o verso aparecia transparente, pois ambas as imagens tem position absolute, ao girar no eixo Y, elas ficaram com os versos virados */
+}
+
+/* flip card animation */
+
+.card.flip {
+  transform: rotateY(180deg);
+}
