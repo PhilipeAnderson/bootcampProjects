@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@types/typescript": "^2.0.0"
+  }
+}
