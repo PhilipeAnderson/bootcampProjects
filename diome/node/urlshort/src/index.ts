@@ -1,15 +1,16 @@
 //@ts-ignore
-import express, { Request, Response } from 'express';
+import express from 'express'
+import { URLController } from './controller/URLController'
+import { MongoConnection } from './database/MongoConnection'
 
-const api = express();
+const api = express()
+api.use(express.json())
 
-api.get('/test', (req: Request, res: Response) => {
-  res.json({ 
-    name: 'Julya',
-    age: 21,
-    born: 'CWB'
-  })
-})
+const database = new MongoConnection()
+database.connect()
 
-api.listen(5000, () => console.log('Express Listening'));
+const urlController = new URLController()
+api.post('/shorten', urlController.shorten)
+api.get('/:hash', urlController.redirect)
 
+api.listen(5000, () => console.log('Express listening'))

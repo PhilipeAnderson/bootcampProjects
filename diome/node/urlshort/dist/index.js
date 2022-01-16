@@ -4,13 +4,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const URLController_1 = require("./controller/URLController");
+const MongoConnection_1 = require("./database/MongoConnection");
 const api = (0, express_1.default)();
-api.get('/test', (req, res) => {
-    res.json({
-        name: 'Julya',
-        age: 21,
-        born: 'CWB'
-    });
-});
-api.listen(5000, () => console.log('Express Listening'));
+api.use(express_1.default.json());
+const database = new MongoConnection_1.MongoConnection();
+database.connect();
+const urlController = new URLController_1.URLController();
+api.post('/shorten', urlController.shorten);
+api.get('/:hash', urlController.redirect);
+api.listen(5000, () => console.log('Express listening'));
 //# sourceMappingURL=index.js.map
