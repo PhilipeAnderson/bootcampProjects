@@ -4,17 +4,17 @@ import { api } from '../../services/api';
 
 import styles from './styles.module.scss';
 
-export function User() {
+export function User({ dataNewUser }) {
 
   const [infoEachRepo, setInfoEachRepo] = useState([])
 
-
-  //console.log(infoEachRepo);
+  const repository = dataNewUser;
+  const url = `https://api.github.com/users/${repository}/repos`;
 
   useEffect(() => {
-    api.get(`https://api.github.com/users/PhilipeAnderson/repos`)
+     api.get(url)
       .then(response => setInfoEachRepo(response.data))
-  }, [])
+  }, [infoEachRepo])
 
   return (
     <main className={styles.container}>

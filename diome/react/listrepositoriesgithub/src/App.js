@@ -12,6 +12,7 @@ Modal.setAppElement('#root');
 export default function App() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isNewUser, setIsNewUser] = useState('')
 
   function handleOpenModal(){
     setIsModalOpen(true)
@@ -22,14 +23,13 @@ export default function App() {
   }
 
   function newDataUser(data){
-    console.log(data)
-  }
-  
+    setIsNewUser(data)
+  }  
 
   return (
     <InfoUserProvider>
       <Header onHandleOpenModal={handleOpenModal}/>
-      <User />
+      <User dataNewUser={isNewUser}/>
       <NewUserModal isOpen={isModalOpen} onRequestClose={handleCloseModal} onChangeUser={newDataUser}/>
     </InfoUserProvider>
   );
