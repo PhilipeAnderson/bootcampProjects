@@ -2,9 +2,10 @@ import { useContext } from 'react';
 import { InfoUserContext } from '../../InfoUserContext';
 
 
+
 import styles from './styles.module.scss';
  
-export function Header() {
+export function Header({ onHandleOpenModal }) {
 
   const data = useContext(InfoUserContext)
 
@@ -16,10 +17,11 @@ export function Header() {
           <p>Seja Bem Vindo</p>
           <p>{data.name}</p>
         </div>
-        <button>
-          <a href="https://github.com/PhilipeAnderson">github</a>
+        <button onClick={onHandleOpenModal}>
+          Change User
         </button>
       </nav>
+      
     </header>
 
   );

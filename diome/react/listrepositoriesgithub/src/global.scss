@@ -11,10 +11,14 @@
   --darkLight: #333333;
 
   --light: #d6d6d6;
-  --destak: #fffb00;
+  --destak: #7573e6;
+  --fontDestak: #f0bae7;
 
   --fonts: #ffffff;
   --fontsDark: #484848;
+
+  --background: #484848;
+  --buttonBackground: #31da31;
 }
 
 html {
@@ -36,4 +40,72 @@ a {
 
 li {
   list-style: none;
+}
+
+.modalOverlay {
+  background: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.modalContent {
+  width: 100%;
+  max-width: 576px;
+  padding: 3rem;
+  position: relative;
+  border-radius: 0.25rem;
+  background-color: var(--background);
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    h2 {
+      color: var(--light);
+      margin-bottom: 1rem;
+    }
+
+    span {
+      cursor: pointer;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+
+  }
+
+  input {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: var(--buttonBackground);
+
+    transition: filter, color 0.4s;
+
+    &:hover {
+      filter: brightness(0.8);
+      color: var(--fonts);
+    }
+  }
 }

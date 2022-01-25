@@ -36,12 +36,13 @@
     cursor: pointer;
     color: var(--fonts);
     border-radius: 4rem;
-    background-color: var(--dark);
-    transition: 0.2s;
+    background-color: var(--destak);
+    
+    transition: filter 0.5s;
 
     &:hover {
-      color: var(--dark);
-      background-color: var(--destak);
+      filter: brightness(0.8);
+      color: var(--fontDestak)
     }
   }
 }

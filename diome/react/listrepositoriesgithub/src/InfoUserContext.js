@@ -7,8 +7,6 @@ export const InfoUserProvider = ({ children }) => {
 
   const [repositories, setRepositories] = useState([]);
 
-  
-  
   useEffect(() => {
     api.get('PhilipeAnderson')
       .then(response => setRepositories(response.data))
