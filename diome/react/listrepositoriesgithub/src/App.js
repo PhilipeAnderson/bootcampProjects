@@ -20,13 +20,17 @@ export default function App() {
   function handleCloseModal(){
     setIsModalOpen(false)
   }
+
+  function newDataUser(data){
+    console.log(data)
+  }
   
 
   return (
     <InfoUserProvider>
       <Header onHandleOpenModal={handleOpenModal}/>
       <User />
-      <NewUserModal isOpen={isModalOpen} onRequestClose={handleCloseModal}/>
+      <NewUserModal isOpen={isModalOpen} onRequestClose={handleCloseModal} onChangeUser={newDataUser}/>
     </InfoUserProvider>
   );
 }

@@ -9,7 +9,7 @@ export function User() {
   const [infoEachRepo, setInfoEachRepo] = useState([])
 
 
-  console.log(infoEachRepo);
+  //console.log(infoEachRepo);
 
   useEffect(() => {
     api.get(`https://api.github.com/users/PhilipeAnderson/repos`)

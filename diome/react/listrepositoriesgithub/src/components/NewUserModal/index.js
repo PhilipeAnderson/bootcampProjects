@@ -6,10 +6,8 @@ export function NewUserModal({ isOpen, onRequestClose, onChangeUser }) {
 
   const [user, setUser] = useState('')
 
-
-  //Fecha o modal e passa um valor para o App.js
-  //A variável user está sendo alimentada pelo onChange do input
-  function sendUser() {
+  function sendUser(e) {
+    e.preventDefault()
     onChangeUser(user)
     setUser('')
     onRequestClose(onRequestClose)
@@ -28,8 +26,10 @@ export function NewUserModal({ isOpen, onRequestClose, onChangeUser }) {
           <h2>Enter Your user from GitHub</h2>
           <span onClick={onRequestClose}><AiOutlineClose color="#d6d6d6"/></span>
         </div>
-        <input type="text" value={user} onChange={(e) => setUser(e.target.value)} placeholder="Enter your username here!" />
-        <button onClick={sendUser}>Search</button>
+        <form onSubmit={sendUser}>
+          <input type="text" value={user} onChange={(e) => setUser(e.target.value)} placeholder="Enter your username here!" />
+          <button type="submit">Search</button>
+        </form>
       </section>
     </Modal>
  
