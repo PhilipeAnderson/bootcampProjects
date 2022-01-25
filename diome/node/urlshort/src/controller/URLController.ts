@@ -25,7 +25,6 @@ export class URLController {
 			response.redirect(url.originURL)
 			return
 		}
-
 		response.status(400).json({ error: 'URL not found' })
 	}
 }

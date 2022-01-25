@@ -1,4 +1,4 @@
 export const config = {
 	API_URL: 'http://localhost:5000',
-	MONGO_CONNECTION: 'mongodb+srv://<user>:<password>@new-url.lhwdp.mongodb.net/<cluster-name>?retryWrites=true&w=majority'
+	MONGO_CONNECTION: 'mongodb+srv://philipeacampos:123456@urlshort.qay10.mongodb.net/urlshort?retryWrites=true&w=majority'
 }
