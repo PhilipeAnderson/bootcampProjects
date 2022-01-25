@@ -3,14 +3,14 @@ import { api } from "./services/api";
 
 export const InfoUserContext = createContext([]);
 
-export const InfoUserProvider = ({ children }) => {
+export const InfoUserProvider = ({ children, isNewUser }) => {
 
   const [repositories, setRepositories] = useState([]);
 
   useEffect(() => {
-    api.get('PhilipeAnderson')
+    api.get(isNewUser)
       .then(response => setRepositories(response.data))
-    },[])
+    },[repositories])
 
   return (
     <InfoUserContext.Provider value={repositories}>

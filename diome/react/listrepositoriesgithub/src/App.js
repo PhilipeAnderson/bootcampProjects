@@ -27,7 +27,7 @@ export default function App() {
   }  
 
   return (
-    <InfoUserProvider>
+    <InfoUserProvider isNewUser={isNewUser}>
       <Header onHandleOpenModal={handleOpenModal}/>
       <User dataNewUser={isNewUser}/>
       <NewUserModal isOpen={isModalOpen} onRequestClose={handleCloseModal} onChangeUser={newDataUser}/>
