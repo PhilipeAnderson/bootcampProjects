@@ -8,6 +8,7 @@ const green = document.querySelector('.green');
 const red = document.querySelector('.red');
 const yellow = document.querySelector('.yellow');
 const blue = document.querySelector('.blue');
+const scoreDiv = document.querySelector('#score')
 
 // Create color random
 const shuffleOrder = () => {
@@ -39,12 +40,14 @@ const checkOrder = () => {
   for(let i in clickOrder) {
     if(clickOrder[i] != order[i]) {
       gameOver();
+      scoreDiv.innerHTML = '';
       break;
     };
   };
 
   if(clickOrder.length == order.length) {
     alert(`Score: ${ score }\n You Win! Started next level!`);
+    scoreDiv.innerHTML = score;
     nextLevel();
   };
 };
