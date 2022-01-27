@@ -17,15 +17,15 @@ ReactJs:<br />
 <table border="1">
     <thead>
     	<tr>
-        	<th>dtMoney</th>
-          <th>listRepositoriesGithub</th>
-        </tr>
+      <th>dtMoney</th>
+      <th><img src="rocketseat/react/dtmoney/src/assets/dtmoney.JPG" alt="screen project" /></th>
+     </tr>
     </thead>
     <tbody>
     	<tr>
-        	<td align="center"><img src="rocketseat/react/dtmoney/src/assets/dtmoney.JPG" alt="screen project" /></td>
-            <td align="center"><img src="diome/react/listrepositoriesgithub/src/img/listrepo.JPG" alt="screen project" /></td>
-        </tr>
+      <td align="center">listRepositoriesGithub</td>
+      <td align="center"><img src="diome/react/listrepositoriesgithub/src/img/listrepo.JPG" alt="screen project" /></td>
+     </tr>
     </tbody>
 </table>
 
@@ -36,15 +36,15 @@ Javascript:
 <table border="1">
     <thead>
     	<tr>
-        	<th>SpaceShooter</th>
-          <th>TicTacToe</th>
-        </tr>
+      <th>SpaceShooter</th>
+      <th><img src="diome/javascript/spaceshooter/img/spaceshooter.png" alt="screen game" /></th>
+     </tr>
     </thead>
     <tbody>
     	<tr>
-        	<td align="center"><img src="diome/javascript/spaceshooter/img/spaceshooter.png" alt="screen game" /></td>
-            <td align="center"><img src="diome/javascript/tictactoe/img/tictactoe.JPG" alt="screen game" /></td>
-        </tr>
+      <td align="center">TicTacToe</td>
+      <td align="center"><img src="diome/javascript/tictactoe/img/tictactoe.JPG" alt="screen game" /></td>
+     </tr>
     </tbody>
 </table>
 
