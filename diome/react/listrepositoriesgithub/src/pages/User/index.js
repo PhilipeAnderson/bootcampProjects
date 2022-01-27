@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { api } from '../../services/api';
 
-
 import styles from './styles.module.scss';
 
 export function User({ dataNewUser }) {

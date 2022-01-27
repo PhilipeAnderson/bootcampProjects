@@ -18,7 +18,7 @@ export function Header({ onHandleOpenModal }) {
           <p>{data.name}</p>
         </div>
         <button onClick={onHandleOpenModal}>
-          Change User
+          Put your username here!
         </button>
       </nav>
       
