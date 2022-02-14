@@ -20,7 +20,7 @@
 This repository includes all bootcamps made in one place.
 The idea behind is simple. Just organize the projects by institutions and technologies in a simple way.
 Everything that is currently being studied is here. Just access the institution and then the technology.
-The readme files for each will be updated over the course of days. It was a mistake I made and I'm ready to correct it.
+The readme files for each will be updated over the course of days.
 
 ## Favorite Projects
 
