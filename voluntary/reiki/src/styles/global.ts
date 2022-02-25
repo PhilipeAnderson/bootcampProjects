@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     --white: #FFFFFF;
     --black: #000000;
 
+    --backgroundDefault: #FFFFFF;
     --backgroundLight: #DDD6CD;
     --backgroundDark: #474747;
   }
@@ -29,7 +30,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     color: var(--white);
-    background-color: var(--backgroundLight);
+    background-image: url('/assets/back.png');
+    background-color: var(--backgroundDefault)
   }
 
   body, input, textarea, select, button {
@@ -42,6 +44,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     color: inherit;
+    cursor: pointer;
     text-decoration: none;
   }
 `;

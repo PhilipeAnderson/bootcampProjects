@@ -6,7 +6,6 @@ export default function Home() {
       <Head>
         <title>Reiki Online</title>
       </Head>
-        <h1>Hello</h1>
     </>
   )
 }
