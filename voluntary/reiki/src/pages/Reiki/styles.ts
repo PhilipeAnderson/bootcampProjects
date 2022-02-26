@@ -13,9 +13,5 @@ export const Container = styled.div`
     h1, h2, h3, p {
       color: #000;
     }
-
-    p {
-      color: #000;
-    }
   }
 `;
