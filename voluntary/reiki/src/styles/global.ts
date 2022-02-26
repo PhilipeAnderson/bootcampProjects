@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     color: var(--white);
     background-image: url('/assets/back.png');
-    background-color: var(--backgroundDefault)
+    background-repeat: no-repeat;
   }
 
   body, input, textarea, select, button {

@@ -9,14 +9,30 @@ export const Container = styled.div`
     height: 5rem;
     margin: 0 auto;
     border-bottom: 1px solid #474747;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
     nav {
       padding: 20px;
       margin-top: 7px;
-      position: absolute;
       
       a {
         margin-left: 40px
       }
+    }
+
+    section {
+      padding: 20px;
+      margin-top: 7px;
+
+      i {
+        font-size: 20px;
+        margin-left: 20px;
+        
+      }
+      
     }
   }
 `;
