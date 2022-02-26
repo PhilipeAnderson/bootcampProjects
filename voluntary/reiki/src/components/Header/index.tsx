@@ -1,5 +1,6 @@
+import Link from 'next/link';
 
-import { Content } from '../Content';
+import { Content } from './Content';
 import { Container } from './styles';
 
 export function Header() {
@@ -7,11 +8,9 @@ export function Header() {
     <Container>
       <header>
         <nav>
-          <a>Início</a>
-          <a>Reiki ?</a>
-          <a>Depoimentos</a>
-          <a>Parceiros</a>
-          <a>Contato</a>
+          <Link href='/'>Início</Link>
+          <Link href='/Reiki'>Reiki ?</Link>
+          <Link href='/Contato'>Contato</Link>
         </nav>
       </header>
       <Content />
