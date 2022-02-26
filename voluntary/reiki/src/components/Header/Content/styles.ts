@@ -13,11 +13,17 @@ export const Container = styled.div`
     font-size: 1.7rem;
     font-weight: bold;
     color: var(--white);
-    margin-top: -50px;
+    margin-top: -100px;
   }
 
   img {
     margin-top: 100px;
     width: 20%;
+  }
+
+  @media(max-width:720px){
+    P {
+      margin-top: -30px;
+    }
   }
 `;
