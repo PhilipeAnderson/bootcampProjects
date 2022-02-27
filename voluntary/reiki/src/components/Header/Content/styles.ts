@@ -10,20 +10,20 @@ export const Container = styled.div`
   
   p {
     width: 60%;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: var(--white);
-    margin-top: -100px;
+    margin-top: -170px;
   }
 
   img {
-    margin-top: 100px;
-    width: 20%;
+    margin-top: 10px;
+    width: 24%;
   }
 
   @media(max-width:720px){
     P {
-      margin-top: -30px;
+      margin-top: 20px;
     }
   }
 `;
