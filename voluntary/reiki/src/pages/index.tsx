@@ -9,7 +9,32 @@ export default function Home() {
       </Head>
       <Container>
         <main>
-          <h1>Home</h1>
+          <section>
+            <div>
+              <h4>Presencial</h4>
+              <p>
+                Temos um ambiente preparado para te atender, através 
+                de horários agendados.
+              </p>
+              <button>Saiba mais</button>
+            </div>
+            <div>
+              <h4>Domicílio</h4>
+              <p>
+                Temos um ambiente preparado para te atender, através 
+                de horários agendados.
+              </p>
+              <button>Saiba mais</button>
+            </div>
+            <div>
+              <h4>Online</h4>
+              <p>
+                Temos um ambiente preparado para te atender, através 
+                de horários agendados.
+              </p>
+              <button>Saiba mais</button>
+            </div>
+          </section>
         </main>
       </Container>
     </>
