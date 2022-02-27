@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Attendance } from '../components/Attendance';
 import { Testimonial } from '../components/Testimonial'
+import { Meaning } from '../components/Meaning'
 import { Container } from './styles';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Container>
         <Attendance />
         <Testimonial />
+        <Meaning />
       </Container>
     </>
   )
