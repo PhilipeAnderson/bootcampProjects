@@ -10,7 +10,7 @@ export function Attendance() {
             Temos um ambiente preparado para te atender, através 
             de horários agendados.
           </p>
-          <button>Saiba mais</button>
+          <button>Marque um Horário</button>
         </div>
         <div>
           <h4>Domicílio</h4>
@@ -18,7 +18,7 @@ export function Attendance() {
             Temos um ambiente preparado para te atender, através 
             de horários agendados.
           </p>
-          <button>Saiba mais</button>
+          <button>Marque um Horário</button>
         </div>
         <div>
           <h4>Online</h4>
@@ -26,7 +26,7 @@ export function Attendance() {
             Temos um ambiente preparado para te atender, através 
             de horários agendados.
           </p>
-          <button>Saiba mais</button>
+          <button>Marque um Horário</button>
         </div>
       </section>
     </Container>

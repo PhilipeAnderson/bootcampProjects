@@ -1,4 +1,5 @@
 import { Container } from './styles';
+import Link from 'next/link';
 
 export default function Reiki() {
   return(
@@ -102,6 +103,10 @@ export default function Reiki() {
           E ainda, o Reiki causa relaxamento, o que também age para uma 
           melhor noite de sono. 
           </p>
+
+          <Link href='/'>
+            Fale Conosco
+          </Link>
       </main>
     </Container>
   )

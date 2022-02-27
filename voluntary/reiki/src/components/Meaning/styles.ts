@@ -49,6 +49,8 @@ export const Container = styled.main`
       
       img {
         width: 33%;
+        margin-right: 30px;
+        
       }
     }
     
