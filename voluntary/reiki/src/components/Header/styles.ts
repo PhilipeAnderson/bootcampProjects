@@ -29,9 +29,7 @@ export const Container = styled.div`
       i {
         font-size: 20px;
         margin-left: 20px;
-        
       }
-      
     }
   }
 `;

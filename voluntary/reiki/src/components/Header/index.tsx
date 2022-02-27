@@ -9,9 +9,8 @@ export function Header() {
     <Container>
       <header>
         <nav>
-          <Link href='/'>Início</Link>
-          <Link href='/Reiki'>Reiki ?</Link>
-          <Link href='/Contato'>Contato</Link>
+          <Link href='/'>Home</Link>
+          <Link href='/Reiki'>Sobre o Reiki</Link>
         </nav>
         <section>
           <i><FaWhatsapp /></i>
