@@ -4,7 +4,7 @@ export function Meaning() {
   return(
     <Container>
       <section>
-        <h1>Tradição</h1>
+        <h1>Tradição do Reiki</h1>
         <div>
           <aside>
             <article>

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.main`
   width: 100%;
   
-
   section {
     max-width: 1080px;
     margin: 0 auto;
@@ -15,7 +14,10 @@ export const Container = styled.main`
 
     h1 {
       color: #000;
+      width: 100%;
+      text-align: center;
       margin-bottom: 40px;
+      display: block;
     }
 
     div {
@@ -48,12 +50,9 @@ export const Container = styled.main`
       }
       
       img {
-        width: 33%;
-        margin-right: 30px;
-        
+        width: 30%;
+        margin-right: 40px;
       }
     }
-    
-
   }
 `;
