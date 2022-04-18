@@ -1,10 +1,13 @@
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ManagerRoutes } from './routes';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hy</h1>
-    </div>
+    <Router>
+      <ManagerRoutes />
+    </Router>
+    
   );
 }
 
