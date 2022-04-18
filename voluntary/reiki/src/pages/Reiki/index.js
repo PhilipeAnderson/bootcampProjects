@@ -1,7 +1,14 @@
+import { Header } from '../../components/Header';
+import { Tenor } from '../../components/Tenor';
+import { Footer } from '../../components/Footer';
 
 
 export function Reiki() {
   return(
-    <h1>Reiki</h1>
+    <>
+      <Header />
+      <Tenor />
+      <Footer />
+    </>
   )
 }
