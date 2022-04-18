@@ -26,14 +26,14 @@ ReactJs:<br />
 <table border="1">
     <thead>
     	<tr>
-      <th>dtMoney</th>
-      <th><img src="" alt="" /></th>
+      <th>Home</th>
+      <th><img src="./src/assets/home.JPG" alt="Página Home" /></th>
      </tr>
     </thead>
     <tbody>
     	<tr>
-      <td align="center">listRepositoriesGithub</td>
-      <td align="center"><img src="" alt="" /></td>
+      <td align="center">Reiki</td>
+      <td align="center"><img src="./src/assets/reiki.JPG" alt="Página Reiki" /></td>
      </tr>
     </tbody>
 </table>
