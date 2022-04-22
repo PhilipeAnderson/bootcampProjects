@@ -1,0 +1,45 @@
+body{
+    background: #bff8f0;
+
+}
+
+.dino{
+    width: 180px;
+    height: 180px;
+    background-image: url(../img/miniPapa.png);
+    position: absolute;
+    bottom: 40;
+}
+
+.cactus{
+    width: 180px;
+    height: 180px;
+    background-image: url(../img/miniCoyo.png);
+    position: absolute;
+    bottom: 40;
+}
+
+.game-over{
+    text-align: center;
+    color: #777;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+@keyframes slideright{
+    from{
+        background-position: 70000%;
+    }to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/desert.jpg);
+    background-repeat: repeat-x;
+    animation: slideright 3000s infinite linear;
+    width: 100%;
+    height: 160px;
+}
