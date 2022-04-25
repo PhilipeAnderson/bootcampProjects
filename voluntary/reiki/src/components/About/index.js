@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import Reiki from '../../assets/jpr.png';
+import Reiki from '../../assets/blue.png';
 
 
 export function About() {
