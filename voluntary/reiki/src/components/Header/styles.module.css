@@ -16,7 +16,7 @@
     margin: 0 auto;
     padding: 0 50px;
     max-width: 1080px;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #000;
 }
 
 .menu {
@@ -26,7 +26,7 @@
 }
 
 .textMenu {
-    color: #000;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin-right: 20px;
@@ -42,10 +42,6 @@
     color: #000;
     font-size: 18px;
     margin-left: 20px;
-}
-
-.icons > a {
-    color: #000
 }
 
 .bodyHeader {
