@@ -19,7 +19,3 @@ a {
   color: white;
   transition: liner 1s;
 }
-
-a:hover {
-  color: #58c0d5;
-}
