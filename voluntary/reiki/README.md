@@ -1,4 +1,4 @@
-# Projeto Reiki
+# Reiki Project
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Philipe-HTML" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
@@ -11,28 +11,20 @@
 
 ## Como acessar
 
-Uma página simples e responsiva com reactJS afim de ajudar na propagação das informações do nicho do cliente.
-Neste caso o mesmo possuí habilidades com o Reiki. A priori foi criado um banner com as informações das novas redes sociais do cliente e nele um QRCode que envia os usuários de seu estabelecimento a uma página de árvore de links, onde lá é direcionado as redes do mesmo e por fim ao site criado em ReactJs.
-O site pode ser visualizado no link abaixo enquanto o cliente decide o local de hospedagem.
-<a href="https://reiki-psi.vercel.app/">Site do Cliente | Reiki</a>
+A simple and responsive page with reactJS to help spread the customer's niche information. In this case she has skills with Reiki. At the beginning, a banner was created with the information of the new social networks of the client and in it a QRCode that sends the users of your establishment to a page of tree of links, where the networks of the same are directed and finally to the site created in ReactJs. The website can be viewed at the link below while the customer decides on the hosting location.
+<a href="https://reiki-psi.vercel.app/"> Page in Vercel | Reiki </a>
 
-## 
-
-At the moment there are four projects that stand out from the others.
-Are they:<br />
-ReactJs:<br />
-  * rocketseat/react/dtmoney
-  * diome/react/listrepositoriesgithub { In the process of switching to the CONTEXT API! }
+## Preview
 <table border="1">
     <thead>
     	<tr>
       <th>Home</th>
-      <th><img src="./src/assets/home.JPG" alt="Página Home" /></th>
+      <th>Reiki</th>
      </tr>
     </thead>
     <tbody>
     	<tr>
-      <td align="center">Reiki</td>
+      <td align="center"><img src="./src/assets/home.JPG" alt="Página Home" /></td>
       <td align="center"><img src="./src/assets/reiki.JPG" alt="Página Reiki" /></td>
      </tr>
     </tbody>
