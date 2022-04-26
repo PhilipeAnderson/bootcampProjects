@@ -71,4 +71,7 @@
     flex-direction: column
   }
 
+  .tipsAbout {
+    margin-top: -20px;
+  }
 }
