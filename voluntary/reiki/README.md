@@ -11,7 +11,7 @@
 
 ## Como acessar
 
-A simple and responsive page with reactJS to help spread the customer's niche information. In this case he has skills with Reiki. At the beginning, a banner was created with the information of the new social networks of the client and in it a QRCode that sends the users of your establishment to a page of tree of links, where the networks of the same are directed and finally to the site created in ReactJs . The website can be viewed at the link below while the customer decides on the hosting location.
+A simple and responsive page with reactJS to help spread the customer's niche information. In this case she has skills with Reiki. At the beginning, a banner was created with the information of the new social networks of the client and in it a QRCode that sends the users of your establishment to a page of tree of links, where the networks of the same are directed and finally to the site created in ReactJs. The website can be viewed at the link below while the customer decides on the hosting location.
 <a href="https://reiki-psi.vercel.app/"> Page in Vercel | Reiki </a>
 
 ## Preview
