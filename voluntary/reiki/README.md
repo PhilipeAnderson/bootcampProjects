@@ -37,22 +37,3 @@ ReactJs:<br />
      </tr>
     </tbody>
 </table>
-
-Javascript:
- * diome/javascript/spaceshooter
- * diome/javascript/tictactoe
-
-<table border="1">
-    <thead>
-    	<tr>
-      <th>SpaceShooter</th>
-      <th><img src="" alt="" /></th>
-     </tr>
-    </thead>
-    <tbody>
-    	<tr>
-      <td align="center">TicTacToe</td>
-      <td align="center"><img src="" alt="" /></td>
-     </tr>
-    </tbody>
-</table>
