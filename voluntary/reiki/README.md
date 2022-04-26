@@ -11,9 +11,9 @@
 
 ## Como acessar
 
-Com o intuíto de ajudar pessoas com pequenos negócios a ter sua página na internet, coloquei-me a disposição de criar uma página simples e responsiva com reactJS afim de ajudar na propagação das informações do nicho do cliente.
+Uma página simples e responsiva com reactJS afim de ajudar na propagação das informações do nicho do cliente.
 Neste caso o mesmo possuí habilidades com o Reiki. A priori foi criado um banner com as informações das novas redes sociais do cliente e nele um QRCode que envia os usuários de seu estabelecimento a uma página de árvore de links, onde lá é direcionado as redes do mesmo e por fim ao site criado em ReactJs.
-O site pode ser visualizado no link abaixo enquanto o cliente decide ainda o local de hospedagem.
+O site pode ser visualizado no link abaixo enquanto o cliente decide o local de hospedagem.
 <a href="https://reiki-psi.vercel.app/">Site do Cliente | Reiki</a>
 
 ## 
@@ -34,25 +34,6 @@ ReactJs:<br />
     	<tr>
       <td align="center">Reiki</td>
       <td align="center"><img src="./src/assets/reiki.JPG" alt="Página Reiki" /></td>
-     </tr>
-    </tbody>
-</table>
-
-Javascript:
- * diome/javascript/spaceshooter
- * diome/javascript/tictactoe
-
-<table border="1">
-    <thead>
-    	<tr>
-      <th>SpaceShooter</th>
-      <th><img src="" alt="" /></th>
-     </tr>
-    </thead>
-    <tbody>
-    	<tr>
-      <td align="center">TicTacToe</td>
-      <td align="center"><img src="" alt="" /></td>
      </tr>
     </tbody>
 </table>
