@@ -70,5 +70,11 @@
   }
 }
 
+@media(max-width: 415px){
+  .textTestimonial {
+    font-size: 0.8rem;
+  }
+}
+
 
 
