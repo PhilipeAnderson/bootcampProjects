@@ -9,25 +9,29 @@ export function Tenor() {
       <h1>O que é o Reiki</h1>
           <br />
           <p>
-            &nbsp;&nbsp;&nbsp; O Reiki é uma técnica criada no Japão que consiste na imposição 
-            de mãos para transferência de energia, pois acredita-se que 
-            desta forma é possível alinhar centros de energia do corpo, 
-            conhecidos como chakras, promovendo o equilíbrio energético, 
-            necessário para manter o bem-estar físico e mental.<br /><br />
+            &nbsp;&nbsp;&nbsp;  O Reiki é um processo de encontro de duas energias, 
+            a energia universal com a nossa porção física. A energia vital presente 
+            em todo o universo é a energia cósmica que permeia  todas as coisas, ou 
+            seja, está presente em todos os lugares do universo. É a energia vital 
+            cósmica, a energia vital universal. Chamada energia Rei. É essa energia 
+            juntamente com a energia vital individual que está no nosso corpo mantendo-o 
+            vivo e energizado, sem o KI não há vida.  O terapeuta em Reiki capta a 
+            energia Rei e ao transmiti-la harmoniza a energia ki, promovendo, ou 
+            potencializando a cura..<br /><br />
 
-            &nbsp;&nbsp;&nbsp; Antes de realizar a sessão de Reiki, o terapeuta desta técnica, 
-            chamado de reikiano, fará uma limpeza energética no ambiente, 
-            para que seja assegurado um espírito e consciência de harmonia 
-            e amor. Durante as sessões o reikiano colocará as mãos sobre o 
-            corpo de uma pessoa com objetivo de mudar a oscilação ou 
-            vibração das energias e isto traz alguns benefícios comprovados 
-            como alívio de dores e redução de sintomas de ansiedade e 
-            estresse.<br /><br />
-
-            &nbsp;&nbsp;&nbsp; A prática do Reiki é segura e não gera nenhum efeito colateral 
-            e nem está ligado a uma religião, podendo ser aceita por pessoas 
-            de diferentes origens e crenças. Também pode ser aplicada em 
-            conjunto com outras técnicas terapêuticas.<br /><br />
+            &nbsp;&nbsp;&nbsp; A Técnica do Reiki foi desenvolvida no Japão e a sua 
+            principal finalidade é potencializar a cura. Utilizada na medicina alternativa 
+            para alinhar os centros de energéticos do corpo, conhecidos como chakras. 
+            Eles captam e devolvem energia, portanto há uma troca energética com o meio 
+            externo. Assim, o Reiki promove o equilíbrio energético necessário 
+            para manter ou restaurar a saúde global, além de bem-estar físico, 
+            equilíbrio e harmonia. Utilizado, também, pelo SUS, por ter sua eficácia 
+            comprovada, como coadjuvante no tratamento das mais variadas enfermidades. 
+            Além dos chakras aplica-se o Reiki em vários pontos do corpo e localmente, 
+            o caso de problemas específicos. A qualidade da vibração energética dos chakras 
+            interfere na saúde global, por isso a importância desse equilíbrio. Alívio de dores, 
+            redução de sintomas de ansiedade e estresse são alguns dos benefícios do Reiki. 
+            <br /><br />
           </p>
           <br />
           <h2>

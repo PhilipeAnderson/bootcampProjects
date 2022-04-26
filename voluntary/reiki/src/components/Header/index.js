@@ -35,8 +35,10 @@ export function Header() {
       </main>
       <section className={styles.bodyHeader}>
         <h1 className={styles.textBody}>
-          O Reiki é uma ferramenta natural que pode ser usada 
-          para nos ajudar a lidar com as tensões da vida cotidiana.
+          {/* O Reiki é uma ferramenta natural que pode ser usada 
+          para nos ajudar a lidar com as tensões da vida cotidiana. */}
+          Reiki é uma terapia holística. Atua em todos os níveis do nosso corpo, 
+          promovendo o equilíbrio e contribuindo para a saúde global. 
         </h1>
         <img className={styles.lotus} src={Lotus} alt="Flor de Lotus" />
       </section>

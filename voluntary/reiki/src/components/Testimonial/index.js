@@ -9,12 +9,11 @@ export function Testimonial() {
         </div>
         <div className={styles.textTestimonial}>
           <header className={styles.titleTestimonial}>
-            Flávia Assunção
+            Raquel Correia
           </header>
           <footer className={styles.descriptionTestimonial}>
-            Foi incrível a experiência que tive ao me conectar 
-            comigo mesma, em segurança e em um ambiente que me 
-            proporcionou um grande benefício.
+          Mestra e Terapeuta em Reiki por mais de 20 anos, com formação em filosofia pela UFPR, 
+          atuou na rede municipal de ensino por 25 anos. Apaixonada por Filosofia Clínica.
           </footer>
         </div>
       </section>
