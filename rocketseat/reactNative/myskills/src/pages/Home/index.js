@@ -4,9 +4,12 @@ import {
   StyleSheet, 
   View, 
   Text, 
-  TextInput,
-  TouchableOpacity
+  TextInput
 } from 'react-native';
+
+import { ButtonAdd } from '../../components/ButtonAdd';
+import { SkillCard } from '../../components/SkillCard';
+
 
 export const Home = () => {
 
@@ -14,8 +17,8 @@ export const Home = () => {
   const [ mySkills, setMySkills ] = useState([])
 
   const handleAddNewSkill = () => {
-    setMySkills([...mySkills, newSkill])
-    //setMySkills(oldState => [...oldState, newSkill])
+    //setMySkills([...mySkills, newSkill])
+    setMySkills(oldState => [...oldState, newSkill])
   }
 
   return (
@@ -29,13 +32,8 @@ export const Home = () => {
         onChangeText={setNewSkill}
       />
 
-      <TouchableOpacity 
-        style={styles.button} 
-        activeOpacity={0.7}
-        onPress={handleAddNewSkill}  
-      >
-        <Text style={styles.buttonText}>Add</Text>
-      </TouchableOpacity>
+      <ButtonAdd onPress={handleAddNewSkill} />
+
 
       <Text style={[styles.title, { marginTop: 50 }]}>
         Skills
@@ -43,11 +41,7 @@ export const Home = () => {
 
       {
         mySkills.map(skill => (
-          <TouchableOpacity style={styles.buttonSkill}>
-            <Text style={styles.textSkill}>
-              { skill }
-            </Text>
-          </TouchableOpacity>
+          <SkillCard skill={ skill }/>
         ))
       }
 
@@ -74,29 +68,5 @@ const styles = StyleSheet.create({
     padding: Platform.OS === 'ios' ? 15 : 10,
     marginTop: 30,
     borderRadius: 7
-  },
-  button: {
-    backgroundColor: '#A370F7',
-    padding: 15,
-    borderRadius:7,
-    alignItems: 'center',
-    marginTop: 20
-  },
-  buttonText: {
-    color: '#FFFFFF',
-    fontSize: 17,
-    fontWeight: 'bold'
-
-  },
-  buttonSkill: {
-    marginTop: 10,
-    borderRadius: 12,
-    backgroundColor: '#1F1E25'
-  },
-  textSkill: {
-    padding: 10,
-    fontSize: 20,
-    color: '#FFFFFF'
-
   }
 })
