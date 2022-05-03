@@ -10,7 +10,12 @@ import {
 
 export const Home = () => {
 
-  const [ newSkill, setNewSkill ] = useState()
+  const [ newSkill, setNewSkill ] = useState('')
+  const [ mySkills, setMySkills ] = useState([])
+
+  const handleAddNewSkill = () => {
+    setMySkills(oldState => [...oldState, newSkill])
+  }
 
   return (
     <View style={styles.container}>
@@ -23,13 +28,27 @@ export const Home = () => {
         onChangeText={setNewSkill}
       />
 
-      <TouchableOpacity style={styles.button} activeOpacity={0.7} >
+      <TouchableOpacity 
+        style={styles.button} 
+        activeOpacity={0.7}
+        onPress={handleAddNewSkill}  
+      >
         <Text style={styles.buttonText}>Add</Text>
       </TouchableOpacity>
 
       <Text style={[styles.title, { marginTop: 50 }]}>
-        { newSkill }
+        Skills
       </Text>
+
+      {
+        mySkills.map(skill => (
+          <TouchableOpacity style={styles.buttonSkill}>
+            <Text style={styles.textSkill}>
+              { skill }
+            </Text>
+          </TouchableOpacity>
+        ))
+      }
 
     </View>
   );
@@ -65,7 +84,18 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#FFFFFF',
     fontSize: 17,
-    fontWeight: 'bold',
+    fontWeight: 'bold'
+
+  },
+  buttonSkill: {
+    marginTop: 10,
+    borderRadius: 12,
+    backgroundColor: '#1F1E25'
+  },
+  textSkill: {
+    padding: 10,
+    fontSize: 20,
+    color: '#FFFFFF'
 
   }
 })
