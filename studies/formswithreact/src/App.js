@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-    <h1>Formulários com React</h1>
+      <h1>Formulários com React</h1>
       <form onSubmit={ handleSubmit }>
         <input type="text" name="email" placeholder="email" onChange={ handleInputChange }/>
         <button type="submit">Enviar</button>
