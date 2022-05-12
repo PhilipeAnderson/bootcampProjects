@@ -28,6 +28,7 @@ export const Home = () => {
 
   return (
     <View style={styles.container}>
+
       <Text style={styles.title}> Hy Philipe </Text>
 
       <TextInput
