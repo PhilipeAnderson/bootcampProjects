@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Platform,
   StyleSheet, 
@@ -21,6 +21,10 @@ export const Home = () => {
     //setMySkills([...mySkills, newSkill])
     setMySkills(oldState => [...oldState, newSkill])
   }
+
+  useEffect(() => {
+    console.log('Executado')
+  },[])
 
   return (
     <View style={styles.container}>
