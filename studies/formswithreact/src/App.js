@@ -2,12 +2,27 @@ import React, { useState } from 'react';
 
 function App() {
 
-  const [formValues, setFormValues] = useState({languages: 'javascript', drink: 'cafe'});
+  const [formValues, setFormValues] = useState({
+    languages: 'javascript', 
+    drink: 'cafe',
+    social: { Instagram: true, LinkedIn: true}
+  });
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({...formValues, [name]: value});
-    console.log('*** handleInputChange', name, value)
+    const { name, value, type, checked } = e.target;
+
+    const isCheckbox = type === 'checkbox';
+    const data = formValues[name] || {}
+    if(isCheckbox){
+      data[value] = checked;
+    }
+
+    const newValue = (isCheckbox) ? data : value;
+
+    //console.log('*** handleInputChange', name, value, checked)
+    console.log('*** handleInputChange', data)
+    //setFormValues({...formValues, [name]: value});
+    setFormValues({...formValues, [name]: newValue});
   };
 
   const handleSubmit = (e) => {
@@ -66,6 +81,43 @@ function App() {
               onChange={handleInputChange} 
               checked={formValues.drink === 'cha'}
             /> Chá
+          </label>
+        </div>
+
+        <div className="checks">
+          <label> 
+            <input 
+              type="checkbox" 
+              name="social" 
+              value="Twitter" 
+              onChange={handleInputChange} 
+            /> Twitter 
+          </label>
+          <label> 
+            <input 
+              type="checkbox" 
+              name="social" 
+              value="Facebook" 
+              onChange={handleInputChange} 
+            /> Facebook 
+          </label>
+          <label> 
+            <input 
+              type="checkbox" 
+              name="social" 
+              value="Instagram" 
+              onChange={handleInputChange}
+              checked={formValues.social && formValues.social.Instagram === true}
+            /> Instagram 
+          </label>
+          <label> 
+            <input 
+              type="checkbox" 
+              name="social" 
+              value="LinkedIn" 
+              onChange={handleInputChange} 
+              checked={formValues.social && formValues.social.LinkedIn}
+            /> LinkedIn 
           </label>
         </div>
 
