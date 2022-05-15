@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function App() {
 
-  const [formValues, setFormValues] = useState({});
+  const [formValues, setFormValues] = useState({languages: 'javascript', drink: 'cafe'});
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -46,6 +46,35 @@ function App() {
           <option value="JavaScript">JavaScript</option>
           <option value="RubyOnRails">RubyOnRails</option>
         </select>
+
+        <div style={{ margin: '10px 0px'}}>
+          <label>
+            <input 
+              type="radio" 
+              value="cafe" 
+              name="drink" 
+              onChange={handleInputChange} 
+              checked={formValues.drink === 'cafe'}
+            /> Café
+          </label>
+
+          <label>
+            <input 
+              type="radio" 
+              value="cha" 
+              name="drink" 
+              onChange={handleInputChange} 
+              checked={formValues.drink === 'cha'}
+            /> Chá
+          </label>
+        </div>
+
+        <textarea 
+          name="bio" 
+          onChange={handleInputChange} 
+          value={formValues.bio || ''}
+        >   
+        </textarea>
 
         <button type="submit">
           Enviar
