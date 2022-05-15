@@ -4,12 +4,10 @@ function App() {
 
   const [formValues, setFormValues] = useState({});
 
-
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    console.log('*** handleInputChange', name, value)
     setFormValues({...formValues, [name]: value});
+    console.log('*** handleInputChange', name, value)
   };
 
   const handleSubmit = (e) => {
@@ -18,8 +16,6 @@ function App() {
     const data = Object.fromEntries(formData);
     console.log('*** handleSubmit', data);
   };
-
-  
 
   return (
     <>
@@ -32,6 +28,7 @@ function App() {
           name="name"
           placeholder="Type your name"
           onChange={handleInputChange}
+          value={formValues.name || ''}
         />
 
         <input
@@ -39,6 +36,7 @@ function App() {
           name="email"
           placeholder="Type your email"
           onChange={handleInputChange}
+          value={formValues.email || ''}
         />
 
         <button type="submit">
