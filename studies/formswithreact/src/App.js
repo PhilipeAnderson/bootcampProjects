@@ -2,35 +2,43 @@ import React, { useState } from 'react';
 
 function App() {
 
-  const [ value, setValue ] = useState('contato@contato.com.br');
-  
+  const [formValues, setFormValues] = useState({});
+
+
+
   const handleInputChange = (e) => {
-    console.log('*** handleInputChange', e.target.value);
-    setValue(e.target.value);
+    const { name, value } = e.target;
+    console.log('*** handleInputChange', name, value)
+    setFormValues({...formValues, [name]: value});
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
-
     console.log('*** handleSubmit', data);
-
   };
+
+  
 
   return (
     <>
       <h1>Formulários com React</h1>
 
-      <form onSubmit={ handleSubmit } >
-        
-        <input 
-          type="text" 
-          name="email" 
-          placeholder="email"
-          value={ value } 
-          onChange={ handleInputChange } 
+      <form onSubmit={handleSubmit} >
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Type your name"
+          onChange={handleInputChange}
+        />
+
+        <input
+          type="text"
+          name="email"
+          placeholder="Type your email"
+          onChange={handleInputChange}
         />
 
         <button type="submit">
