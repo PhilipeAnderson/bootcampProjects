@@ -39,6 +39,14 @@ function App() {
           value={formValues.email || ''}
         />
 
+        <select name="languages" onChange={handleInputChange} value={formValues.languages || ''}>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="HtmlCss">HTML CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="RubyOnRails">RubyOnRails</option>
+        </select>
+
         <button type="submit">
           Enviar
         </button>
