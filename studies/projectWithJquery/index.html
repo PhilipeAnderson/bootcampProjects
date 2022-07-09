@@ -7,24 +7,29 @@
   <title>Project With Jquery</title>
 </head>
 <body>
+  <!-- .html .click .dblclick .hide .show .mouseenter .mouseleave .mousedown .mouseup .hover
+       .focus .css .blur .on .
+  -->
   
   <p id="teste">É isso ai</p>
-  
+  <button id="ola">Olá</button>
   <script src="js/jquery.js"></script>
   
   <script>
-      
-    document.getElementById("teste").innerHTML = "Dalhe Dalhe";
-    $("#teste").html("Agora simmmmmm")
-    document.querySelector("#teste").innerHTML = "Foi"
-
-    $(document).ready(function (){
-      
-    })
-
     
+    
+    $(document).ready(function (){
+      $("#teste").html('Deu certo mano')
 
-  </script>
+      $("#ola").click(function() {
+        alert("Fui Ativado")
+      })
+
+
+    })
+    
+    
+    </script>
 
 
 </body>
