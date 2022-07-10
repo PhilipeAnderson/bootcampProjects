@@ -5,7 +5,8 @@
   background-color: #000000;
 }
 
-.innerhtml {
+.innerhtml,
+.innertext {
   color: #FFFFFF;
   margin: 10px;
   padding: 5px;
@@ -46,3 +47,18 @@
 .down { color: #FFFFFF; background-color:rgb(131, 103, 234)}
 .up { color: #FFFFFF; background-color:rgb(103, 166, 234)}
 .hover { color: #FFFFFF; background-color:rgb(103, 234, 228)}
+
+.css {
+  width: 100px;
+  height: 75px;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  color: #000000;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 221, 0);
+  box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.3);
+}

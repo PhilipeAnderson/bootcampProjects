@@ -28,17 +28,22 @@
         Exemplo do evento de Inserção em tela
   -->
 
-  <div id="innerhtml" class="innerhtml">Insira Um Texto Na Tela</div> <!-- click -->
+  <div id="innerhtml" class="innerhtml">Texto Original Da Tela com HTML</div> <!-- Ao Carregar por .html -->
+  <div id="innertext" class="innertext">Texto Original Da Tela com TEXT</div> <!-- Ao Carregar por .text-->
   <script>
     $(document).ready(function() {
-      $("#innerhtml").html("Troque O Texto Da Tela")
+      $("#innerhtml").html("Texto Modificado ao Carregar a Tela com HTML")
+    })
+
+    $(document).ready(function() {
+      $("#innertext").text("Texto modificado ao carregar a Tela com TEXT")
     })
   </script>
   <hr>
+
   <!--
         Exemplos de eventos com o família Click
   -->
-
   <button class="btn clk" id="click">Dispare com Click</button> <!-- click -->
   <button class="btn dblclk" id="dblclick">Dispare com Double Click</button> <!-- dblclick -->
   <script>
@@ -55,6 +60,7 @@
     });
   </script>
   <hr>
+
   <!--  
         Exemplos da Família Mouse
   -->
@@ -82,11 +88,46 @@
       })
 
       $("#hover").hover(function() {
-        alert("Mouse Hover")
+        $(this).text("Mouse Dentro")
+      },
+        function() {
+        $(this).text("Mouse Fora")
+        }
+      );
+    });
+  </script>
+  <hr>
+
+  <!--  
+        Exemplos da Família CSS
+  -->
+  <section>
+    <div class="css" id="css">CSS</div>
+    <div class="css" id="cssDoisOuMais">CSS 2 ou + </div>
+    <div class="css" id="cssOn">CSS Método ON</div>
+  </section>
+  <script>
+    $(document).ready(function() {
+
+      $("#css").click(function() {
+        $(this).css('background-color', 'rgb(0, 255, 106)').text("Mudou A Cor e Mudou o Texto");
+        $(this).css('width', '250px');
+        $(this).css('height', '30px');
+      });
+
+      $("#cssDoisOuMais").dblclick(function() {
+        $(this).css('width', '250px');
+        $(this).css('height', '20px');
+      });
+
+      $("#cssOn").mouseenter(function() {
+        $(this).hide(2000);
+        $(this).css('width', '300px');
+        $(this).css('background', 'rgb(103, 179, 234)');
+        $(this).show('fast');
       })
     });
   </script>
-
 
 </body>
 </html>
