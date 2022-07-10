@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+.innerhtml {
+  color: #FFFFFF;
+  margin: 10px;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.btn {
+  width: 200px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  color: #000;
+  border-radius: 7px;
+  box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.3);
+}
+
+.clk {  background-color: rgb(103, 234, 142)}
+
+.dblclk {  background-color: rgb(234, 103, 188)}
+
+.square {
+  width: 200px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  color: #000000;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: rgb(110, 232, 169);
+}
+
+.enter { color: #FFFFFF; background-color:rgb(212, 103, 234)}
+.leave { color: #FFFFFF; background-color:rgb(173, 103, 234)}
+.down { color: #FFFFFF; background-color:rgb(131, 103, 234)}
+.up { color: #FFFFFF; background-color:rgb(103, 166, 234)}
+.hover { color: #FFFFFF; background-color:rgb(103, 234, 228)}

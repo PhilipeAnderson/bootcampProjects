@@ -4,32 +4,88 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <title>Project With Jquery</title>
 </head>
 <body>
-  <!-- .html .click .dblclick .hide .show .mouseenter .mouseleave .mousedown .mouseup .hover
-       .focus .css .blur .on .
-  -->
-  
-  <p id="teste">É isso ai</p>
-  <button id="ola">Olá</button>
-  <script src="js/jquery.js"></script>
-  
-  <script>
-    
-    
-    $(document).ready(function (){
-      $("#teste").html('Deu certo mano')
 
-      $("#ola").click(function() {
-        alert("Fui Ativado")
+  <!--
+        Carregamento do Código Jquery
+  -->
+  <script src="js/jquery.js"></script>
+
+  <!--
+        Funções Jquery do Exercício !
+
+        .html 
+        .click .dblclick 
+        .mouseenter .mouseleave .mousedown .mouseup .hover .focus 
+        .css .hide .show .blur .on .toggle .fadeIn .fadeOut .fadeToggle 
+        .slideDown .slideUp .slideToggle .animate
+  -->
+
+  <!--
+        Exemplo do evento de Inserção em tela
+  -->
+
+  <div id="innerhtml" class="innerhtml">Insira Um Texto Na Tela</div> <!-- click -->
+  <script>
+    $(document).ready(function() {
+      $("#innerhtml").html("Troque O Texto Da Tela")
+    })
+  </script>
+  <hr>
+  <!--
+        Exemplos de eventos com o família Click
+  -->
+
+  <button class="btn clk" id="click">Dispare com Click</button> <!-- click -->
+  <button class="btn dblclk" id="dblclick">Dispare com Double Click</button> <!-- dblclick -->
+  <script>
+    $(document).ready(function() {
+
+      $("#click").click(function() {
+          alert("Disparado com o Click")
+      });
+
+      $("#dblclick").dblclick(function() {
+          alert("Disparado com o Double Click")
+      });
+
+    });
+  </script>
+  <hr>
+  <!--  
+        Exemplos da Família Mouse
+  -->
+  <div class="square enter" id="mouseenter">Dispare com Mouse Enter</div> <!-- mouseenter -->
+  <div class="square leave" id="mouseleave">Dispare com Mouse Leave</div> <!-- mouseover -->
+  <div class="square down" id="mousedown">Dispare com Mouse Down</div> <!-- mousedown -->
+  <div class="square up" id="mouseup">Dispare com Mouse Up</div> <!-- mouseup -->
+  <div class="square hover" id="hover">Dispare com Hover</div> <!-- hover -->
+  <script>
+    $(document).ready(function() {
+      $("#mouseenter").mouseenter(function() {
+        alert("Mouse Enter");
+      });
+
+      $("#mouseleave").mouseleave(function() {
+        alert("Mouse Leave");
+      });
+
+      $("#mousedown").mousedown(function() {
+        alert("Mouse Down");
+      });
+
+      $("#mouseup").mouseup(function() {
+        alert("Mouse Up")
       })
 
-
-    })
-    
-    
-    </script>
+      $("#hover").hover(function() {
+        alert("Mouse Hover")
+      })
+    });
+  </script>
 
 
 </body>
