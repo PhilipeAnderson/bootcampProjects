@@ -10,22 +10,22 @@
 <body>
 
   <!--
-        Carregamento do Código Jquery
+      Carregamento do Código Jquery
   -->
   <script src="js/jquery.js"></script>
 
   <!--
-        Funções Jquery do Exercício !
+      Funções Jquery do Exercício !
 
-        .html 
-        .click .dblclick 
-        .mouseenter .mouseleave .mousedown .mouseup .hover .focus 
-        .css .hide .show .blur .on .toggle .fadeIn .fadeOut .fadeToggle 
-        .slideDown .slideUp .slideToggle .animate
+      .html 
+      .click .dblclick 
+      .mouseenter .mouseleave .mousedown .mouseup .hover .focus 
+      .css .hide .show .blur .on .toggle .fadeIn .fadeOut .fadeToggle 
+      .slideDown .slideUp .slideToggle .animate
   -->
 
   <!--
-        Exemplo do evento de Inserção em tela
+      Exemplo do evento de Inserção em tela
   -->
 
   <div id="innerhtml" class="innerhtml">Texto Original Da Tela com HTML</div> <!-- Ao Carregar por .html -->
@@ -42,7 +42,7 @@
   <hr>
 
   <!--
-        Exemplos de eventos com o família Click
+      Exemplos de eventos com o família Click
   -->
   <button class="btn clk" id="click">Dispare com Click</button> <!-- click -->
   <button class="btn dblclk" id="dblclick">Dispare com Double Click</button> <!-- dblclick -->
@@ -62,7 +62,7 @@
   <hr>
 
   <!--  
-        Exemplos da Família Mouse
+      Exemplos da Família Mouse
   -->
   <div class="square enter" id="mouseenter">Dispare com Mouse Enter</div> <!-- mouseenter -->
   <div class="square leave" id="mouseleave">Dispare com Mouse Leave</div> <!-- mouseover -->
@@ -99,7 +99,7 @@
   <hr>
 
   <!--  
-        Exemplos da Família CSS
+      Exemplos da Família CSS
   -->
   <section>
     <div class="css" id="css">CSS</div>
@@ -126,6 +126,22 @@
         $(this).css('background', 'rgb(103, 179, 234)');
         $(this).show('fast');
       })
+    });
+  </script>
+  <hr>
+
+  <!--  
+      Exemplos da Família CSS
+  -->
+  <p class="pegaNomeLabel">OI</p>
+  <input class="pegaNomeInput" type="text" placeholder="Digite Seu Nome" />
+  <button class="pegaNomeButton" onclick="pegaNome()">Clique Aqui!</button>
+  <script>
+    $(document).ready(function() {
+
+      let nome = $("pegaNomeInput").val();
+      
+
     });
   </script>
 
